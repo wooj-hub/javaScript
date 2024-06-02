@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="index.js" defer></script> -->
+    <script src="teacher.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <span>아이디 설정</span>
+      <input type="text" class="id" />
+      <span class="id_info"></span>
+      <!-- <span>특수 문자[!#$%^&*] 하나 포함하기</span>
+      <span>글자 수는 4~12글자 사이</span> -->
+    </div>
+    <div>
+      <span>비밀번호 설정</span>
+      <input type="password" class="pw" />
+      <button class="pw_eye_button">
+        <i class="pwIcon fa-regular fa-eye"></i>
+      </button>
+      <span class="pw_info"></span>
+      <!-- <span>특수 문자[!#$%^&*] 하나 포함하기</span>
+      <span>글자 수는 4~12글자 사이</span> -->
+    </div>
+
+    <div>
+      <span>비밀번호 확인</span>
+      <input type="password" class="pwch" />
+      <button class="pwch_eye_button">
+        <i class="pwchIcon fa-regular fa-eye"></i>
+      </button>
+      <span class="pwch_info"></span>
+    </div>
+
+    <div>
+      <button class="register">회원가입 안됨</button>
+      <!-- 위에 3개를 만족하면 회원가입 안됨에서 회원가입 가능으로 바뀜 -->
+    </div>
+  </body>
+</html>
