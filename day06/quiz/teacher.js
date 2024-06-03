@@ -1,42 +1,41 @@
-//import 안됨
-// import { hasSpecial, isValidLength } from "./uilt.js";
-// import {MSG} from "./mag.js"
-// import {COLOR} from "./color.js"
+import { hasSpecial, isValidLength } from "./util.js";
+import { MSG } from "./msg.js";
+import { COLOR } from "./color.js";
 
 const id = document.querySelector(".id");
 const id_info = document.querySelector(".id_info");
 
-//함수들 원래 다른파일에서 export, import 해줘야 함
+//함수들 원래 다른파일에서 export, import
 //특수문자를 갖고있는지 확인하는 함수
-const hasSpecial = (value) => [..."!@#$%^&*"].some((v) => value.includes(v));
-//길이가 4<=길이<=10인지를 확인하는 함수
-const isValidLength = (length) => 4 <= length && length <= 10;
+// const hasSpecial = (value) => [..."!@#$%^&*"].some((v) => value.includes(v));
+// //길이가 4<=길이<=10인지를 확인하는 함수
+// const isValidLength = (length) => 4 <= length && length <= 10;
 
-//MSG 출력하는 함수
-const MSG = {
-  ID: {
-    VALID: "아이디가 올바르지 설정 되었습니다.",
-    INVALID: "아이디가 올바르게 설정 되지 않았습니다.",
-  },
-  PW: {
-    VALID: "비밀번호가 올바르지 설정 되었습니다.",
-    INVALID: "비밀번호가 올바르게 설정 되지 않았습니다.",
-  },
-  PWCH: {
-    VALID: "비밀번호가 확인 일치!",
-    INVALID: "비밀번호가 확인 불일치!",
-  },
+// //MSG 출력하는 함수
+// const MSG = {
+//   ID: {
+//     VALID: "아이디가 올바르지 설정 되었습니다.",
+//     INVALID: "아이디가 올바르게 설정 되지 않았습니다.",
+//   },
+//   PW: {
+//     VALID: "비밀번호가 올바르지 설정 되었습니다.",
+//     INVALID: "비밀번호가 올바르게 설정 되지 않았습니다.",
+//   },
+//   PWCH: {
+//     VALID: "비밀번호가 확인 일치!",
+//     INVALID: "비밀번호가 확인 불일치!",
+//   },
 
-  REGISTER: {
-    VALID: "회원 가입 가능!",
-    INVALID: "회원 가입 불가능!",
-  },
-};
-//COLOR 출력하는 함수
-const COLOR = {
-  VALID: "green",
-  INVALID: "red",
-};
+//   REGISTER: {
+//     VALID: "회원 가입 가능!",
+//     INVALID: "회원 가입 불가능!",
+//   },
+// };
+// //COLOR 출력하는 함수
+// const COLOR = {
+//   VALID: "green",
+//   INVALID: "red",
+// };
 //여기까지 export,import 해줘야 함
 
 //회원가입 버튼 생성
