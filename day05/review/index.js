@@ -13,7 +13,7 @@ coffeeMenu.forEach((v) => {
   const h5 = document.createElement("h5");
   h5.innerText = v.price;
   const span = document.createElement("span");
-  span.innerText = `남은 재고 : ${v.isRemained ? "있음" : "없음"}`;
+  span.innerText = `남은 재고 :${v.isRemained ? "있음" : "없음"}`;
 
   newDiv.appendChild(h3);
   newDiv.appendChild(h5);

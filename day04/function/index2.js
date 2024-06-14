@@ -13,7 +13,7 @@
 //     return 1
 // }
 
-// function name(){
+// function name(x){
 //     console.log(`${x}야 안녕!`);
 // }
 
@@ -32,7 +32,7 @@
 // }
 
 // //같은 의미 화살표함수
-// const getTen_ = () => {
+// const getTen = () => {
 //   return 10;
 // };
 
@@ -41,7 +41,7 @@
 // }
 
 // //같은 의미 화살표 함수
-// const getOne_ = () => 1;
+// const getOne = () => 1;
 
 // function abc(x, y) {
 //   return x() + y();

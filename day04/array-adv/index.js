@@ -101,12 +101,12 @@
 // // 10 3 [3,6,9]
 // // 15 5 [5,10,15]
 
-const multiple = (n, k) =>
-  Array(n)
-    .fill(0)
-    .map((v, i) => i + 1)
-    .filter((v) => v % k == 0);
-console.log(multiple(12, 4));
+// const multiple = (n, k) =>
+//   Array(n)
+//     .fill(0)
+//     .map((v, i) => i + 1)
+//     .filter((v) => v % k == 0);
+// console.log(multiple(12, 4));
 
 //누적 합 구하는 법 reduce()
 //arr:누적 수, cur:현재 수. 누적수에다가 현재 수를 계속 더 함.
@@ -114,18 +114,21 @@ const a = [1, 2, 3, 4, 5];
 a1 = a.reduce((arr, cur) => arr + cur);
 console.log(a1);
 
-//1부터 100까지 더함
-Array(100)
-  .fill(0)
-  .map((v, i) => i + 1)
-  .reduce((arr, cur) => arr + cur);
+// //1부터 100까지 더함
+// Array(100)
+//   .fill(0)
+//   .map((v, i) => i + 1)
+//   .reduce((arr, cur) => arr + cur);
 
-//fruits1 배열에서 각각 인덱스값의 자음을 추출하여 결과값 만들기. 끝판왕....
-//결과값: pplbnnrngkwtmt
+// //fruits1 배열에서 각각 인덱스값의 자음을 추출하여 결과값 만들기. 끝판왕....
+// //결과값: pplbnnrngkwtmt
 const fruits1 = ["apple", "banana", "orange", "kiwi", "tomato"];
 //v는 appple => ["a","p","p","l","e"] 로 바꿔줌
-fruits1
+const f = fruits1
   .map((v) =>
     [...v].filter((v1) => ![..."aeiou"].some((v2) => v2 == v1)).join("")
   )
+  //누적된 문자열을 계속 합침
   .reduce((acc, cur) => acc + cur);
+
+console.log(f);

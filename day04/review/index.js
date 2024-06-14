@@ -6,6 +6,7 @@
 // arr.forEach((v)=>{
 //     console.log(v);
 // });
+
 // arr.some((v)=>{
 //     return v<5;
 // });//true
@@ -34,25 +35,25 @@
 // const box4 = document.querySelector(".box4");
 // const box5 = document.querySelector(".box5");
 
-// box1.addEventListener("click",()=>{
-//     alert("빨강(#fc5c65)색깔입니다");
-// })
-// box2.addEventListener("click",()=>{
-//     alert("주황(#fd9644)색깔입니다");
-// })
+// box1.addEventListener("click", () => {
+//   alert("빨강(#fc5c65)색깔입니다");
+// });
+// box2.addEventListener("click", () => {
+//   alert("주황(#fd9644)색깔입니다");
+// });
 
-// box3.addEventListener("click",()=>{
-//     alert("노랑(#fed330)색깔입니다");
-// })
-// box4.addEventListener("click",()=>{
-//     alert("초록(#26de81)색깔입니다");
-// })
-// box5.addEventListener("click",()=>{
-//     alert("파랑(#2bcbba)색깔입니다");
-// })
+// box3.addEventListener("click", () => {
+//   alert("노랑(#fed330)색깔입니다");
+// });
+// box4.addEventListener("click", () => {
+//   alert("초록(#26de81)색깔입니다");
+// });
+// box5.addEventListener("click", () => {
+//   alert("파랑(#2bcbba)색깔입니다");
+// });
 
-//강사님 코드 colorList에 색깔넣어서 하나씩 빼서 js에서 배경색 삽입
-//colorList = ["#fc5c65", "#fd9644", "#fed330", "#26de81", "#2bcbba"];
+//강사님 코드 colorList에 색깔넣어서 하나씩 빼서 js에서 배경색 삽입. 그냥 알아두기
+// colorList = ["#fc5c65", "#fd9644", "#fed330", "#26de81", "#2bcbba"];
 // colorList.forEach((v) => {
 //   const newDiv = document.createElement("div");
 //   newDiv.classList.add("box");
