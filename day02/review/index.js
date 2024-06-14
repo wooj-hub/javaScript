@@ -60,24 +60,24 @@
 // document.body.appendChild(button2);
 // document.body.appendChild(button3);
 
-//왜 변수로 사용하면 안되지????????????
 const button1 = document.createElement("button");
 const button2 = document.createElement("button");
 const button3 = document.createElement("button");
-const a = 0;
+//const로 하면 값을 못 바꿈. let으로 하기
+let a = 0;
 
 button1.innerText = "-";
 button2.innerText = `${a}`;
 button3.innerText = "+";
 
 button1.addEventListener("click", () => {
-  const b = a - 1;
-  // event 에선 $이게 안먹나???
-  button2.innerText = `${b}`;
+  a = a - 1;
+  button2.innerText = a;
 });
 
 button3.addEventListener("click", () => {
-  a = a - 1;
+  a = a + 1;
+  button2.innerText = a;
 });
 
 document.body.appendChild(button1);

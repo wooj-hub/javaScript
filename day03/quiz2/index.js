@@ -46,10 +46,9 @@ size_array.forEach((v) => {
   size.appendChild(size_button);
 
   size_button.addEventListener("click", () => {
-   size_array.forEach((v1) => {
+    size_array.forEach((v1) => {
       box.classList.remove(v1);
     });
     box.classList.add(v);
   });
 });
-

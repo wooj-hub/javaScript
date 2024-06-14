@@ -19,7 +19,7 @@ coffee.slice(0, 5); //ameri // 0이상 5미만 인덱스
 //대문자 변경
 coffee.toUpperCase(); //AMERICANO
 //소문자 변경
-coffee.toLocaleLowerCase(); //americano
+coffee.toLowerCase(); //americano
 
 //배열화
 coffee.split("i"); // ["amer", "cano"]

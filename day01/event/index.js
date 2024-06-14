@@ -94,25 +94,25 @@
 // 헥사코드를 가진 새로운 버튼이 생김
 // 헥사코드 버튼을 누르면  div의 bg가 변경됨.
 
-const div1 = document.createElement("div");
-div1.style.width = "100px";
-div1.style.height = "100px";
-div1.style.border = "1px solid black";
-div1.style.backgroundColor = "whihe";
-const button1 = document.createElement("button");
-button1.innerText = "색깔 추가";
-button1.addEventListener("click", () => {
-  const a = prompt("무슨색깔?");
-  const button2 = document.createElement("button");
-  button2.style.background = a;
-  button2.innerText = a;
+// const div1 = document.createElement("div");
+// div1.style.width = "100px";
+// div1.style.height = "100px";
+// div1.style.border = "1px solid black";
+// div1.style.backgroundColor = "whihe";
+// const button1 = document.createElement("button");
+// button1.innerText = "색깔 추가";
+// button1.addEventListener("click", () => {
+//   const a = prompt("무슨색깔?");
+//   const button2 = document.createElement("button");
+//   button2.style.background = a;
+//   button2.innerText = a;
 
-  document.body.appendChild(button2);
+//   document.body.appendChild(button2);
 
-  button2.addEventListener("click", () => {
-    div1.style.backgroundColor = a;
-  });
-});
+//   button2.addEventListener("click", () => {
+//     div1.style.backgroundColor = a;
+//   });
+// });
 
-document.body.appendChild(div1);
-document.body.appendChild(button1);
+// document.body.appendChild(div1);
+// document.body.appendChild(button1);

@@ -1,4 +1,5 @@
-//quiz  const fruits = ["사과", "오렌지", "파인애플", "키위", "망고", "아보카도"];
+//quiz
+// const fruits = ["사과", "오렌지", "파인애플", "키위", "망고", "아보카도"];
 
 //사과 버튼
 // 오렌지 버튼
@@ -20,7 +21,8 @@
 //   document.body.appendChild(fruits_button);
 // });
 
-// quiz const coffee = ["아메리카노 3000", "라떼 4000", "바닐라 5000"];
+// quiz
+const coffee = ["아메리카노 3000", "라떼 4000", "바닐라 5000"];
 
 //각각 커피 버튼을 만들어주시고
 //split으로 찢어서 각각 버튼을 누르면 html의 total 가격 올리기
@@ -36,3 +38,18 @@
 //   });
 //   document.body.appendChild(coffee_button);
 // });
+
+coffee.forEach((v) => {
+  const coffee_button = document.createElement("button");
+  const coffee_name = v.split(" ")[0];
+  const coffee_price = Number(v.split(" ")[1]);
+  coffee_button.innerText = coffee_name;
+  const coffee_total = document.querySelector(".total");
+
+  coffee_button.addEventListener("click", () => {
+    coffee_total.innerText =
+      //   Number(coffee_total.innerText) + Number(v.split(" ")[1]); 와 같은 의미임.
+      Number(coffee_total.innerText) + coffee_price;
+  });
+  document.body.appendChild(coffee_button);
+});
