@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../photo/clear.jpg");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron {
+  background-color: white;
+  opacity: 0.2;
+  border: 1px solid red;
+  width: 30%;
+  height: 30%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
