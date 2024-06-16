@@ -1,5 +1,5 @@
-const lat = 37.51;
-const lon = 126.72;
+// const lat = 37.51;
+// const lon = 126.72;
 const APIkey = "d229e4af6a8809509156ccacb8dde1f2";
 //weather API
 // const weatherAPI = fetch(
