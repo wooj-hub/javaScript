@@ -1500,8 +1500,8 @@ const data = [
     department: "Training",
   },
 ];
-// v(객체)에서 구조 분해
-// data.forEach(({ avartar, department, fullName, university }) => {
+// v(객체)에서 구조 분해. v를 사용함
+// data.forEach((v)) => {
 //   const cardList = document.querySelector(".cardList");
 //   cardList.insertAdjacentHTML(
 //     "beforeend",
@@ -1529,6 +1529,7 @@ const user = [
   { id: 3, name: "Charlie", age: 35 },
 ];
 
+//forEach 에 {name, age } 을 나타내면 v.name 을 사용할 필요 없음
 user.forEach(({ name, age }) => {
   console.log(`${name} and ${age}`);
 });
